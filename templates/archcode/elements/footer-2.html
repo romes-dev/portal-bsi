@@ -1,0 +1,116 @@
+{% load static %}
+
+<footer class="site-footer style-2" id="footer" style="background-image:url({% static 'archcode/images/background/pattern3.png' %})">
+    <div class="footer-top">
+        <div class="container">
+            <div class="row footer-logo-head spno">
+                <div class="col-xl-6 col-lg-4 col-sm-12 aos-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="footer-logo">
+                        <img src="{% static 'archcode/images/logo-2.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-sm-6 aos-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                    <div class="icon-bx-wraper style-4 m-b15">
+                        <div class="icon-bx-sm text-primary m-r15 border radius icon-bx">
+                            <i class="flaticon-telephone"></i> 
+                        </div>
+                        <div class="icon-content">
+                            <h4 class="title m-b5">Phone Number</h4>
+                            <p>+91 123 456 7890</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-sm-6 aos-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+                    <div class="icon-bx-wraper style-4 m-b15">
+                        <div class="icon-bx-sm text-primary m-r15 border radius icon-bx">
+                            <i class="flaticon-email"></i> 
+                        </div>
+                        <div class="icon-content">
+                            <h4 class="title m-b5">Email Address</h4>
+                            <p>info@example.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-3 col-md-6 col-sm-12 aos-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                    <div class="widget widget_about">
+                        <div class="widget-title">
+                            <h4 class="title">About Us</h4>
+                        </div>
+                        <p>Nulla lacinia, odio sit amet rutrum maximus, enim nunc mollis risus, eget efficitur eros purus in dolor. Curabitur tristique suscipit diam, sit amet ultrices ante tempus iaculis.</p>
+                        <ul class="social-list style-2">
+                            <li><a href="javascript:void(0);"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="javascript:void(0);"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="javascript:void(0);"><i class="fab fa-twitter"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 aos-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+                    <div class="widget widget_categories p-l50">
+                        <div class="widget-title">
+                            <h4 class="title">Our Links</h4>
+                        </div>
+                        <ul>
+                            <li class="cat-item"><a href="{% url 'archcode:index' %}">Home</a></li>                                         
+                            <li class="cat-item"><a href="{% url 'archcode:about-us' %}">About Us</a></li>                                         
+                            <li class="cat-item"><a href="{% url 'archcode:portfolio' %}">Portfolio</a></li>                                         
+                            <li class="cat-item"><a href="{% url 'archcode:services' %}">Services</a></li>                                         
+                            <li class="cat-item"><a href="{% url 'archcode:team' %}">Team</a></li> 
+                            <li class="cat-item"><a href="{% url 'archcode:blog-grid' %}">News</a></li> 
+                            <li class="cat-item"><a href="{% url 'archcode:contact-us' %}">Contact Us</a></li> 
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 aos-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800">
+                    <div class="widget widget_categories">
+                        <div class="widget-title">
+                            <h4 class="title">Our Services</h4>
+                        </div>
+                        <ul>
+                            <li class="cat-item"><a href="{% url 'archcode:index' %}">Floor Plan Design</a></li>                                         
+                            <li class="cat-item"><a href="{% url 'archcode:about-us' %}">Furniture Work</a></li>                                         
+                            <li class="cat-item"><a href="{% url 'archcode:portfolio' %}">Construction Work</a></li>                                         
+                            <li class="cat-item"><a href="{% url 'archcode:services' %}">Architecture</a></li>                                         
+                            <li class="cat-item"><a href="{% url 'archcode:team' %}">Interior Designing</a></li> 
+                            <li class="cat-item"><a href="{% url 'archcode:blog-grid' %}">24X7 Support</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 aos-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
+                    <div class="widget">
+                        <div class="widget-title">
+                            <h4 class="title">Our Newsletter</h4>
+                        </div>
+                        <p class="text m-b20">Nullam vel massa hendrerit libero auctor volutpat</p>
+                        <div class="ft-subscribe">
+                            <form class="dzSubscribe" action="" method="">
+                                <div class="dzSubscribeMsg"></div>
+                                <div class="input-group">
+                                    <input name="dzEmail" required="required" type="email" class="form-control" placeholder="Email Address...">
+                                    <button name="submit" value="Submit" type="submit" class="btn btn-primary"><i class="fas fa-arrow-right"></i></button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row align-items-center fb-inner spno">
+                <div class="col-lg-6 col-md-12 text-start"> 
+                    <span class="copyright-text">Copyright © 2024 <a href="https://dexignzone.com/" class="text-primary" target="_blank">DexignZone</a> All rights reserved.</span>
+                </div>
+                <div class="col-lg-6 col-md-12 text-end"> 
+                    <ul class="footer-link d-inline-block">
+                        <li><a href="javascript:void(0);">Privacy Policy</a></li>
+                        <li><a href="javascript:void(0);">Team &amp; Condition</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

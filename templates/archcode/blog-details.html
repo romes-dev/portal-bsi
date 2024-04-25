@@ -1,0 +1,317 @@
+{% extends 'archcode/elements/layouts/layout.html' %}
+{% load static %}
+        
+{% block additional_css %}
+{% endblock %}
+		
+{% block content %}
+
+<!-- Blog Large -->
+<div class="content-inner bg-img-fix">
+	<div class="container">
+		<div class="row">
+			<div class="col-xl-4 col-lg-4 m-b30 dz-order-1">
+				<aside class="side-bar sticky-top left">
+					<div class="widget widget_tag_cloud">
+						<div class="widget-title">
+							<h5 class="title">Search</h5>
+							<div class="dz-separator style-1 text-primary mb-0"></div>
+						</div>
+						<div class="search-bx">
+							<form role="search" method="post">
+								<div class="input-group">
+									<input name="text" class="form-control" placeholder="Enter your keywords..." type="text">
+									<span class="input-group-btn">
+										<button type="submit" class="btn btn-primary sharp radius-no"><i class="la la-search scale3"></i></button>
+									</span> 
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="widget widget_categories">
+						<div class="widget-title">
+							<h5 class="title">Categories</h5>
+							<div class="dz-separator style-1 text-primary mb-0"></div>
+						</div>
+						<ul>
+							<li class="cat-item"><a href="javascript:void(0);">Residence</a></li>                                         
+							<li class="cat-item"><a href="javascript:void(0);">Beauty</a></li>                                         
+							<li class="cat-item"><a href="javascript:void(0);">Fashion</a></li>                                         
+							<li class="cat-item"><a href="javascript:void(0);">Images</a></li>                                         
+							<li class="cat-item"><a href="javascript:void(0);">Lifestyle</a></li> 
+						</ul>
+					</div>
+					<div class="widget recent-posts-entry">
+						<div class="widget-title">
+							<h5 class="title">Recent Posts</h5>
+							<div class="dz-separator style-1 text-primary mb-0"></div>
+						</div>
+						<div class="widget-post-bx">
+							<div class="widget-post clearfix">
+								<div class="dz-media"> 
+									<a href="{% url 'archcode:blog-details' %}"><img src="{% static 'archcode/images/blog/recent-blog/pic1.jpg' %}" alt=""></a>
+								</div>
+								<div class="dz-info">
+									<h4 class="title"><a href="{% url 'archcode:blog-details' %}">The Time Is Running Out! Think About These.</a></h4>
+									<div class="dz-meta">
+										<ul>
+											<li class="post-date"> 7 March, 2022 </li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="widget-post clearfix">
+								<div class="dz-media"> 
+									<a href="{% url 'archcode:blog-details' %}"><img src="{% static 'archcode/images/blog/recent-blog/pic2.jpg' %}" alt=""></a>
+								</div>
+								<div class="dz-info">
+									<h4 class="title"><a href="{% url 'archcode:blog-details' %}"> Interior Is Essential For Your Success.</a></h4>
+									<div class="dz-meta">
+										<ul>
+											<li class="post-date"> 7 March, 2022 </li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="widget-post clearfix">
+								<div class="dz-media"> 
+									<a href="{% url 'archcode:blog-details' %}"><img src="{% static 'archcode/images/blog/recent-blog/pic3.jpg' %}" alt=""></a>
+								</div>
+								<div class="dz-info">
+									<h4 class="title"><a href="{% url 'archcode:blog-details' %}">Doubts About Construction You Should.</a></h4>
+									<div class="dz-meta">
+										<ul>
+											<li class="post-date"> 7 March, 2022 </li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="widget-post clearfix">
+								<div class="dz-media"> 
+									<a href="{% url 'archcode:blog-details' %}"><img src="{% static 'archcode/images/blog/recent-blog/pic4.jpg' %}" alt=""></a>
+								</div>
+								<div class="dz-info">
+									<h4 class="title"><a href="{% url 'archcode:blog-details' %}">Having A Provocative Interior Works Only.</a></h4>
+									<div class="dz-meta">
+										<ul>
+											<li class="post-date"> 7 March, 2022 </li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="widget widget widget_categories">
+						<div class="widget-title">
+							<h5 class="title">Archives</h5>
+							<div class="dz-separator style-1 text-primary mb-0"></div>
+						</div>
+						<ul>
+							<li><a href="javascript:void(0);">January</a>(3)</li>
+							<li><a href="javascript:void(0);">Fabruary</a>(4)</li>
+							<li><a href="javascript:void(0);">March</a>(4)</li>
+							<li><a href="javascript:void(0);">April</a>(3)</li>
+							<li><a href="javascript:void(0);">May</a>(4)</li>
+							<li><a href="javascript:void(0);">Jun</a>(1)</li>
+							<li><a href="javascript:void(0);">July</a>(4)</li>
+						</ul>
+					</div>
+				</aside>
+			</div>
+			<div class="col-xl-8 col-lg-8 m-b20">
+				<div class="dz-card blog-single sidebar style-1">
+					<div class="dz-info">
+						<div class="dz-meta">
+							<ul>
+								<li class="post-date">7 March 2022</li>
+								<li class="post-user">By <a href="javascript:void(0);">John Doe</a></li>
+							</ul>
+						</div>
+						<h2 class="dz-title">Fascinating Interior Tactics That Can Help Your Business Grow.</h2>
+					</div>	
+					<div class="dz-media">
+						<img src="{% static 'archcode/images/blog/large/pic1.jpg' %}" alt="">
+					</div>
+					<div class="dz-info">
+						<div class="dz-post-text">
+							<p>You can align your image to the left, right, or center with a caption, link and alt text New Journey to the Mars in the Gutenberg editor, you can drag and drop an image from your computer onto the editing screen. After all, if a customer has to go through a million of steps to send you money, they will probably just give up.Motion design is one of the most powerful tools designers have. The true power of motion can be seen in mobile exp.</p>
+							<blockquote class="block-quote style-1">
+								<p>“ You can make anything look good. Only a quarter of young adults are financially literate. You don’t want to overwhelm them with terrible advice. ”</p>
+								<cite>ArchCode</cite>
+							</blockquote>
+							<ul class="wp-block-gallery columns-3">
+								<li class="blocks-gallery-item"><img alt="" src="{% static 'archcode/images/blog/blog-grid/pic2.jpg' %}"></li>
+								<li class="blocks-gallery-item"><img alt="" src="{% static 'archcode/images/blog/blog-grid/pic1.jpg' %}"></li>
+							</ul>
+							<p>When designers introduce motion, something magical happens – a design comes alive – an app becomes an interactive story that can engage users. Designers have a lot of tools to make a story more interesting. You can align your image to the left, right, or center with a caption, link and alt text New Journey to the Mars in the Gutenberg editor.</p>
+							<h4>20th Century Revolution</h4>
+							<p>Pellentesque congue at augue et porttitor. Aenean volutpat porttitor euismod. Suspendisse eget pretium augue. Etiam venenatis non elit quis tincidunt.</p>
+							<p>I had low expectations about Sofia as a city, but after the walking tour I absolutely loved the place. This was an easy city to navigate, and it was a beautiful city – despite its ugly, staunch and stolid communist-built surrounds. Sofia has a very average facade as you enter the city, but once you lose yourself in the old town area, everything changes.</p>
+							<ul>
+								<li><a rel="noreferrer noopener" href="javascript:void(0);" target="_blank">The feedback provided by a system is</a> not very informative. It’s not clear how a system handles your request or what exactly happens with the information.</li>
+								<li>Today we explore <a rel="noreferrer noopener" href="javascript:void(0);" data-type="URL" data-id="javascript:void(0);" target="_blank">the concept of motion design in the interfaces of the future</a> with Artificial Intelligence (AI) assistants. It is a sort of a decider: whether your readers will be back or ditch you.</li>
+								<li><a href="javascript:void(0);" data-type="URL" data-id="javascript:void(0);" target="_blank" rel="noreferrer noopener">These simple survey measures</a> seem credible. But according to psychologists, happiness and life satisfaction do not coincide. <a href="javascript:void(0);" data-type="URL" data-id="javascript:void(0);" target="_blank" rel="noreferrer noopener">Life satisfaction has a cognitive component.</a></li>
+							</ul>
+							<h4>He runs towards the Maybury Hill: Embeds.</h4>
+							<p>Mauris egestas erat ut arcu interdum molestie. Nam sed hendrerit lorem. Duis eget orci ac odio gravida laoreet. Donec et diam varius, semper justo at, accumsan elit. Aenean ut condimentum purus, et egestas lectus. Nulla pretium justo ex, vel iaculis velit aliquet et. Cras sed nisi id ante congue scelerisque non at eros. In finibus rutrum justo nec fringilla. Etiam id augue ornare, dictum tortor ut, tristique metus.</p>
+							<p>Certainly, they are not an answer to everything. The key feature of a website generator lies in universality. In principle, they should meet the requirements and expectations of the majority. When it comes to situations when you require something special or unique, this isn’t the option for you.</p>
+							
+							<p>We woke reasonably late following the feast and free flowing wine the night before. After gathering ourselves and our packs, we headed down to our home stay family’s small dining room for breakfast. We were making our way to the Rila Mountains, where we were visiting the Rila Monastery where we enjoyed scrambled eggs.</p>
+						</div>
+						<div class="dz-share-post">
+							<h5 class="title">Share:</h5>
+							<ul class="dz-social-icon">
+								<li><a href="javascript:void(0);" class="fab fa-facebook-f"></a></li>
+								<li><a href="javascript:void(0);" class="fab fa-twitter"></a></li>
+								<li><a href="javascript:void(0);" class="fab fa-instagram"></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- blog start -->
+				<div class="row extra-blog style-1">
+					<div class="col-lg-12">
+						<div class="widget-title">
+							<h5 class="title">Related Blogs</h5>
+							<div class="dz-separator style-1 text-primary mb-0"></div>
+						</div>
+					</div>
+					<div class="col-lg-12">
+						<div class="row">
+							<div class="col-xl-6 col-lg-12 col-md-6">
+								<div class="dz-card blog-grid style-1 m-b30">
+									<div class="dz-media">
+										<a href="{% url 'archcode:blog-details' %}"><img src="{% static 'archcode/images/blog/blog-grid/pic1.jpg' %}" alt=""></a>
+									</div>
+									<div class="dz-info">
+										<div class="dz-meta">
+											<ul>
+												<li class="post-date">7 March 2022</li>
+												<li class="post-user">By <a href="javascript:void(0);">John Doe</a></li>
+											</ul>
+										</div>
+										<h5 class="dz-title"><a href="{% url 'archcode:blog-details' %}">Sed lacinia pulvinar odio, nec tempus augue.</a></h5>
+										<div class="dz-post-text text">
+											<p>You can align your image to the left, right, or center with a caption, link and alt text New Journey to the.</p>
+										</div>
+										<a href="{% url 'archcode:blog-details' %}" class="btn-link">Read More</a>
+									</div>
+								</div>
+							</div>	
+							<div class="col-xl-6 col-lg-12 col-md-6">
+								<div class="dz-card blog-grid style-1 m-b30">
+									<div class="dz-media">
+										<a href="{% url 'archcode:blog-details' %}"><img src="{% static 'archcode/images/blog/blog-grid/pic1.jpg' %}" alt=""></a>
+									</div>
+									<div class="dz-info">
+										<div class="dz-meta">
+											<ul>
+												<li class="post-date">7 March 2022</li>
+												<li class="post-user">By <a href="javascript:void(0);">John Doe</a></li>
+											</ul>
+										</div>
+										<h5 class="dz-title"><a href="{% url 'archcode:blog-details' %}">Sed lacinia pulvinar odio, nec tempus augue.</a></h5>
+										<div class="dz-post-text text">
+											<p>You can align your image to the left, right, or center with a caption, link and alt text New Journey to the.</p>
+										</div>
+										<a href="{% url 'archcode:blog-details' %}" class="btn-link">Read More</a>
+									</div>
+								</div>
+							</div>	
+						</div>
+					</div>	
+				</div>
+				<div class="clear" id="comment-list">
+					<div class="comments-area style-1" id="comments">
+						<div class="widget-title">
+							<h5 class="title">8 Comments</h5>
+							<div class="dz-separator style-1 text-primary mb-0"></div>
+						</div>
+						<div class="clearfix">
+							<!-- comment list END -->
+							<ol class="comment-list">
+								<li class="comment">
+									<div class="comment-body">
+										<div class="comment-author vcard"> 
+											<img  class="avatar photo" src="{% static 'archcode/images/testimonials/pic1.jpg' %}" alt=""> 
+											<cite class="fn">Celesto Anderson</cite>
+										</div>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+										<div class="reply"> 
+											<a href="javascript:void(0);" class="comment-reply-link">
+											Reply<i class="fa fa-reply"></i></a> 
+										</div>
+									</div>
+									<ol class="children">
+										<li class="comment odd parent">
+											<div class="comment-body">
+												<div class="comment-author vcard"> 
+													<img  class="avatar photo" src="{% static 'archcode/images/testimonials/pic2.jpg' %}" alt=""> 
+													<cite class="fn">Jake Johnson</cite>
+												</div>
+												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+												<div class="reply"> 
+													<a href="javascript:void(0);" class="comment-reply-link">
+													<i class="fa fa-reply"></i>Reply</a> 
+												</div>
+											</div>
+											<!-- list END -->
+										</li>
+									</ol>
+									<!-- list END -->
+								</li>
+								<li class="comment">
+									<div class="comment-body">
+										<div class="comment-author vcard"> 
+											<img  class="avatar photo" src="{% static 'archcode/images/testimonials/pic1.jpg' %}" alt=""> 
+											<cite class="fn">John Doe</cite> 
+										</div>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+										<div class="reply"> 
+											<a href="javascript:void(0);" class="comment-reply-link">
+											<i class="fa fa-reply"></i>Reply</a> 
+										</div>
+									</div>
+								</li>
+							</ol>
+							<!-- comment list END -->
+							<!-- Form -->
+							<div class="comment-respond style-1" id="respond">
+								<div class="widget-title">
+									<h5 class="title">Leave Your Comment</h5>
+									<div class="dz-separator style-1 text-primary mb-0"></div>
+									<a style="display:none;" href="javascript:void(0);" id="cancel-comment-reply-link" rel="nofollow">Cancel reply</a>
+									<div class="dz-separator bg-primary"></div>
+								</div>
+								<form class="comment-form" id="commentform" method="">
+									<p class="comment-form-author">
+										<label for="author">Name <span class="required">*</span></label>
+										<input type="text" name="Author"  placeholder="Author" id="author">
+									</p>
+									<p class="comment-form-email">
+										<label for="email">Email <span class="required">*</span></label>
+										<input type="text" placeholder="Email" name="email" id="email">
+									</p>
+									<p class="comment-form-comment">
+										<label for="comment">Comment</label>
+										<textarea rows="8" name="comment" placeholder="Comment" id="comment"></textarea>
+									</p>
+									<p class="form-submit">
+										<button type="submit" class="btn shadow-primary btn-primary btn-icon" id="submit">POST NOW
+											<i class="fas fa-caret-right ms-1"></i>
+										</button>
+									</p>
+								</form>
+							</div>
+							<!-- Form -->
+						</div>
+					</div>
+				</div>
+				<!-- blog END -->
+			</div>
+		</div>
+	</div>
+</div>
+	
+{% endblock %}
+ 

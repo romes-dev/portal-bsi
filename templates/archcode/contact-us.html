@@ -1,0 +1,106 @@
+{% extends 'archcode/elements/layouts/layout.html' %}
+{% load static %}
+        
+{% block additional_css %}
+{% endblock %}
+		
+{% block content %}
+<section class="content-inner">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-4 col-md-6 m-b30 aos-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+				<div class="icon-bx-wraper style-8 bg-white" data-name="01">
+					<div class="icon-md m-r20">
+						<span class="icon-cell text-primary"><i class="flaticon-telephone"></i></span> 
+					</div>
+					<div class="icon-content">
+						<h4 class="tilte m-b10">Call Now</h4>
+						<p class="m-b0">+91 123 456 7890,<br/> +91 987 654 3210</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6 m-b30 aos-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+				<div class="icon-bx-wraper style-8 bg-white" data-name="02">
+					<div class="icon-md m-r20">
+						<span class="icon-cell text-primary"><i class="flaticon-email"></i></span> 
+					</div>
+					<div class="icon-content">
+						<h4 class="tilte m-b10">Location</h4>
+						<p class="m-b0">info@gmail.com,<br/> services@gmail.com</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-12 m-b30 aos-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
+				<div class="icon-bx-wraper style-8 bg-white" data-name="03">
+					<div class="icon-md m-r20">
+						<span class="icon-cell text-primary"><i class="flaticon-placeholder"></i></span> 
+					</div>
+					<div class="icon-content">
+						<h4 class="tilte m-b10">Email Now</h4>
+						<p class="m-b0">15/B Miranda House,<br/> New York, US</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- Contact Form -->
+<section class="content-inner-1 pt-0">
+	<div class="map-iframe">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d227748.3825624477!2d75.65046970649679!3d26.88544791796718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396c4adf4c57e281%3A0xce1c63a0cf22e09!2sJaipur%2C+Rajasthan!5e0!3m2!1sen!2sin!4v1500819483219" class="align-self-stretch radius-sm" style="border:0; width:100%; min-height:100%;" allowfullscreen></iframe>
+	</div>
+	<div class="container">
+		<div class="contact-area1 aos-item" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">
+			<div class="section-head style-1 text-center">
+				<h6 class="sub-title text-primary">Contact Us</h6>
+				<h2 class="title">Get In Touch With Us</h2>
+			</div>
+			<form class="dz-form style-1 dzForm" method="" action="">
+				<input type="hidden" class="form-control" name="dzToDo" value="Contact">
+				<div class="dzFormMsg"></div>							
+				<div class="row sp10">
+					<div class="col-sm-6 m-b20">
+						<div class="input-group">
+							<input type="text" class="form-control" name="dzFirstName" placeholder="First Name" required>
+						</div>
+					</div>
+					<div class="col-sm-6 m-b20">
+						<div class="input-group">
+							<input type="text" class="form-control" name="dzLastName" placeholder="Last Name" required>
+						</div>
+					</div>
+					<div class="col-sm-6 m-b20">
+						<div class="input-group">
+							<input type="text" class="form-control" name="dzEmail" placeholder="Email" required>
+						</div>
+					</div>
+					<div class="col-sm-6 m-b20">
+						<div class="input-group">
+							<input type="text" class="form-control" name="dzPhoneNumber" placeholder="Phone No." required>
+						</div>
+					</div>
+					<div class="col-sm-12 m-b20">
+						<div class="input-group">
+							<input type="text" class="form-control" name="dzOther[subject]" placeholder="Subject" required>
+						</div>
+					</div>
+					<div class="col-sm-12 m-b20">
+						<div class="input-group">
+							<textarea name="dzMessage" class="form-control">Message</textarea>
+						</div>
+					</div>
+					<div class="col-sm-12 m-b20">
+						<div class="input-group">
+							<div class="g-recaptcha" data-sitekey="6LefsVUUAAAAADBPsLZzsNnETChealv6PYGzv3ZN" data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback"></div>
+							<input class="form-control d-none" style="display:none;" data-recaptcha="true" required data-error="Please complete the Captcha">
+						</div>
+					</div>
+					<div class="col-sm-12 text-center">
+						<button name="submit" type="submit" value="submit" class="btn btn-primary btn-rounded">SUBSCRIBE NOW <i class="m-l10 fas fa-caret-right"></i></button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</section>
+{% endblock %}

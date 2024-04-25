@@ -1,0 +1,209 @@
+{% load static %}
+
+<header class="site-header mo-left header center style-2">
+    <!-- Header Top Bar -->
+    <div class="top-bar">
+        <div class="container-fluid">
+            <div class="dz-topbar-inner d-flex justify-content-between align-items-center">
+                <div class="dz-topbar-left">
+                    <ul class="dz-social-icon">
+                        <li><a class="fab fa-facebook-f" href="javascript:void(0);"></a></li>
+                        <li><a class="fab fa-instagram" href="javascript:void(0);"></a></li>
+                        <li><a class="fab fa-twitter" href="javascript:void(0);"></a></li>
+                        <li><a class="fab fa-youtube" href="javascript:void(0);"></a></li>
+                    </ul>
+                </div>
+                <div class="dz-topbar-right">
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 15/B Miranda House, New York, US</li>
+                        <li><i class="far fa-envelope"></i> info@supports.com</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Main Header -->
+    <div class="sticky-header main-bar-wraper navbar-expand-lg">
+        <div class="main-bar clearfix ">
+            <div class="container-fluid clearfix">
+                <!-- Website Logo -->
+                <div class="logo-header mostion logo-dark">
+                    <a href="{% url 'archcode:index' %}"><img src="{% static 'archcode/images/logo-2.png' %}" alt=""></a>
+                </div>
+                <!-- Nav Toggle Button -->
+                <button class="navbar-toggler collapsed navicon justify-content-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                
+                <div class="extra-nav-left">
+                    <div class="extra-icon-box">
+                        <i class="flaticon-phone-call"></i>
+                        <span>Call Now</span>
+                        <h4 class="title">+91 784 9874 789</h4>
+                    </div>
+                </div>
+
+                <!-- Extra Nav -->
+                <div class="extra-nav">
+                    <div class="extra-cell">
+                        <a class="search-link" id="quik-search-btn" href="javascript:void(0);">
+                            <i class="flaticon-loupe"></i>
+                        </a>
+                        <a href="javascript:void();" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn shadow-primary btn-primary login-btn btn-sm">
+                            <span>Subscribe</span>
+                        </a>
+                        <div class="menu-btn navicon">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Extra Nav -->
+                
+                <!-- Quik Search -->
+                <div class="dz-quik-search">
+                    <form action="#">
+                        <input name="search" value="" type="text" class="form-control" placeholder="Enter Your Keyword ...">
+                        <span  id="quik-search-remove"><i class="ti-close"></i></span>
+                    </form>
+                </div>
+                <div class="header-nav navbar-collapse collapse justify-content-center" id="navbarNavDropdown">
+                    <div class="logo-header logo-dark">
+                        <a href="{% url 'archcode:index' %}"><img src="{% static 'archcode/images/logo-2.png' %}" alt=""></a>
+                    </div>
+                    <ul class="nav navbar-nav navbar navbar-left">	
+                        <li class="sub-menu-down active"><a href="javascript:void(0);">Home</a>
+                            <ul class="sub-menu">
+                                <li><a href="{% url 'archcode:index' %}">Home 1</a></li>
+                                <li><a href="{% url 'archcode:index-2' %}">Home 2</a></li>
+                            </ul>
+                        </li>
+                        <li class="sub-menu-down"><a href="javascript:void(0);">Pages</a>
+                            <ul class="sub-menu">
+                                <li><a href="{% url 'archcode:about-us' %}">About Us</a></li>
+                                <li><a href="{% url 'archcode:team' %}">Team</a></li>
+                                <li><a href="{% url 'archcode:coming-soon' %}">Coming Soon</a></li>
+                                <li><a href="{% url 'archcode:under-construct' %}">Under Construct</a></li>
+                                <li><a href="{% url 'archcode:error-404' %}">Error 404</a></li>
+                            </ul>
+                        </li>
+                        <li class="sub-menu-down"><a href="javascript:void(0);">Portfolio</a>
+                            <ul class="sub-menu">
+                                <li><a href="{% url 'archcode:portfolio' %}">Portfolio</a></li>
+                                <li><a href="{% url 'archcode:portfolio-details' %}">Portfolio Details</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar navbar-right">	
+                        <li class="sub-menu-down"><a href="javascript:void(0);">Services</a>
+                            <ul class="sub-menu">
+                                <li><a href="{% url 'archcode:services' %}">Services</a></li>
+                                <li><a href="{% url 'archcode:services-details' %}">Services Details</a></li>
+                            </ul>
+                        </li>
+                        <li class="sub-menu-down"><a href="javascript:void(0);">Blog</a>
+                            <ul class="sub-menu">
+                                <li><a href="{% url 'archcode:blog-grid' %}">Blog Grid</a></li>
+                                <li><a href="{% url 'archcode:blog-large-left-sidebar' %}">Large Left Sidebar</a></li>
+                                <li><a href="{% url 'archcode:blog-list-left-sidebar' %}">List Left Sidebar</a></li>
+                                <li><a href="{% url 'archcode:blog-details' %}">Blog Details</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="{% url 'archcode:contact-us' %}">Contact Us</a></li>
+                    </ul>
+                    <div class="dz-social-icon">
+                        <ul>
+                            <li><a class="fab fa-facebook-f" href="javascript:void(0);"></a></li>
+                            <li><a class="fab fa-twitter" href="javascript:void(0);"></a></li>
+                            <li><a class="fab fa-linkedin-in" href="javascript:void(0);"></a></li>
+                            <li><a class="fab fa-instagram" href="javascript:void(0);"></a></li>
+                        </ul>
+                    </div>	
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Main Header End -->
+</header>
+
+<div class="contact-sidebar">
+    <div class="contact-box">
+        <div class="logo-contact logo-dark">
+            <a href="{% url 'archcode:index' %}"><img src="{% static 'archcode/images/logo-2.png' %}" alt=""></a>
+        </div>
+        
+        <div class="m-b50 contact-text">
+            <div class="dz-title">
+                <h4>About US</h4>
+                <div class="dz-separator style-1 text-primary mb-0"></div>	
+            </div>
+            <p>Aliquam erat volutpat. Nunc erat massa, porttitor vel egestas sit amet, tristique at massa. Donec posuere odio neque, in ultricies lorem aliquet eu. Donec venenatis libero a nulla placerat egestas.</p>
+            <a href="{% url 'archcode:about-us' %}" class="btn btn-primary btn-sm">READ MORE</a>
+        </div>
+        <div class="dz-title">
+            <h4>Contact Info</h4>
+            <div class="dz-separator style-1 text-primary mb-0"></div>	
+        </div>
+        <div class="icon-bx-wraper left">
+            <div class="icon-md m-r20">
+                <span class="icon-cell"><i class="las la-phone-volume"></i></span> 
+            </div>
+            <div class="icon-content">
+                <h5 class="tilte">Call Now</h5>
+                <p class="m-b0">+91 123 456 7890,<br/> +91 987 654 3210</p>
+            </div>
+        </div>
+        <div class="icon-bx-wraper left">
+            <div class="icon-md m-r20">
+                <span class="icon-cell"><i class="las la-envelope-open"></i></span> 
+            </div>
+            <div class="icon-content">
+                <h5 class="tilte">Location</h5>
+                <p class="m-b0">info@gmail.com, services@gmail.com</p>
+            </div>
+        </div>
+        <div class="icon-bx-wraper left">
+            <div class="icon-md m-r20">
+                <span class="icon-cell"><i class="las la-map-marker"></i></span> 
+            </div>
+            <div class="icon-content">
+                <h5 class="tilte">Email Now</h5>
+                <p class="m-b0">15/B Miranda House, New York, US</p>
+            </div>
+        </div>
+    </div>	
+</div>
+<div class="menu-close"></div>
+<!-- InquiryModal -->
+<div class="modal fade inquiry-modal" id="exampleModal" tabindex="-1" role="dialog"  aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="inquiry-adv">
+            <img src="{% static 'archcode/images/img1.jpg' %}" alt=""/>
+        </div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <i class="flaticon-email"></i>
+                <h5 class="modal-title" id="exampleModalLongTitle">Subscribe To Our Newsletter</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="dzSubscribeMsg"></div>
+                <form action="script/mailchamp.php" class="dzSubscribe" method="post">
+                    <div class="form-group mb-3">
+                        <input type="text" name="dzName" required class="form-control" placeholder="YOUR NAME">
+                    </div>
+                    <div class="form-group mb-3">
+                        <input type="email" name="dzEmail" required class="form-control" placeholder="YOUR EMAIL ADDRESS">
+                    </div>
+                    <div class="form-group text-center">
+                        <button name="submit" type="submit" value="Submit" class="btn btn-primary">SUBSCRIBE NOW</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

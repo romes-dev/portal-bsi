@@ -1,0 +1,100 @@
+{% extends 'archcode/elements/layouts/layout.html' %}
+{% load static %}
+        
+{% block additional_css %}
+{% endblock %}
+		
+{% block content %}
+
+<!-- Portfolio -->
+<section class="content-inner-1 overflow-hidden">
+    <div class="container">
+        <div class="row lightgallery">
+            <div class="col-md-12">
+                <div class="dz-box overlay style-1 m-md-b30 m-b50 aos-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="dz-media">
+                        <img src="{% static 'archcode/images/work/pic-4.jpg' %}" alt="">
+                    </div>
+                    <div class="dz-info">
+                        <span data-exthumbimage="{% static 'archcode/images/work/pic-4.jpg' %}" data-src="{% static 'archcode/images/work/pic-4.jpg' %}" class="view-btn lightimg" title="INTERIOR DESIGN"></span>
+                        <h6 class="sub-title">INTERIOR DESIGN</h6>
+                        <div class="port-info">
+                            <div class="dz-meta">
+                                <ul>
+                                    <li class="post-date">7 March 2022</li>
+                                    <li class="post-user">By <a href="javascript:void(0);">John Doe</a></li>
+                                </ul>
+                            </div>
+                            <h2 class="title m-b15"><a href="{% url 'archcode:portfolio-details' %}">Modern House Interior <span>New York</span></a></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="dz-box overlay style-1 m-md-b30 m-b50 aos-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="dz-media">
+                        <img src="{% static 'archcode/images/work/pic-5.jpg' %}" alt="">
+                    </div>
+                    <div class="dz-info">
+                        <span data-exthumbimage="{% static 'archcode/images/work/pic-5.jpg' %}" data-src="{% static 'archcode/images/work/pic-5.jpg' %}" class="view-btn lightimg" title="INTERIOR DESIGN"></span>
+                        <h6 class="sub-title">ARCHITECTURE</h6>
+                        <div class="port-info">
+                            <div class="dz-meta">
+                                <ul>
+                                    <li class="post-date">7 March 2022</li>
+                                    <li class="post-user">By <a href="javascript:void(0);">John Doe</a></li>
+                                </ul>
+                            </div>
+                            <h2 class="title m-b15"><a href="{% url 'archcode:portfolio-details' %}">Sample Hotel Art, <span>India</span></a></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="dz-box overlay style-1 m-md-b30 m-b50 aos-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="dz-media">
+                        <img src="{% static 'archcode/images/work/pic-6.jpg' %}" alt="">
+                    </div>
+                    <div class="dz-info">
+                        <span data-exthumbimage="{% static 'archcode/images/work/pic-6.jpg' %}" data-src="{% static 'archcode/images/work/pic-6.jpg' %}" class="view-btn lightimg" title="INTERIOR DESIGN"></span>
+                        <h6 class="sub-title">CONSTRUCTION</h6>
+                        <div class="port-info">
+                            <div class="dz-meta">
+                                <ul>
+                                    <li class="post-date">7 March 2022</li>
+                                    <li class="post-user">By <a href="javascript:void(0);">John Doe</a></li>
+                                </ul>
+                            </div>
+                            <h2 class="title m-b15"><a href="{% url 'archcode:portfolio-details' %}">Residental Project, <span>Paris</span></a></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="dz-box overlay style-1 m-b30 aos-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="dz-media">
+                        <img src="{% static 'archcode/images/work/pic-7.jpg' %}" alt="">
+                    </div>
+                    <div class="dz-info">
+                        <span data-exthumbimage="{% static 'archcode/images/work/pic-7.jpg' %}" data-src="{% static 'archcode/images/work/pic-7.jpg' %}" class="view-btn lightimg" title="INTERIOR DESIGN"></span>
+                        <h6 class="sub-title">INTERIOR DESIGN</h6>
+                        <div class="port-info">
+                            <div class="dz-meta">
+                                <ul>
+                                    <li class="post-date">7 March 2022</li>
+                                    <li class="post-user">By <a href="javascript:void(0);">John Doe</a></li>
+                                </ul>
+                            </div>
+                            <h2 class="title m-b15"><a href="{% url 'archcode:portfolio-details' %}">Mordern Family House,<span>Italy</span></a></h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 text-center aos-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                <a href="javascript:void();" class="btn shadow-primary btn-primary">Load More</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
