@@ -5,16 +5,15 @@
 {% endblock %}
 		
 {% block content %}	
-{% for image in images %}
-<div class="card" style="width: 18rem;">
-  <img src="{{ image.image.url }}" class="card-img-top" alt="...">
-  <div class="card-body">
-	<h5 class="card-title">{{ image.title }}</h5>
-	<p class="card-text">{{ image.description }}</p>
-	<a href="#" class="btn btn-primary">Acessar</a>
-  </div>
+<div class="registration-form">
+    <h2>Registre-se</h2>
+    <form method="post">
+        {% csrf_token %} 
+        {{ form.as_p }}
+        <button type="submit">Registrar</button>
+    </form>
 </div>
-{% endfor %}
+
 
 
 {% block additional_js %}

@@ -9,6 +9,10 @@ class Image(models.Model):
         return self.title
     
 
+class Usuario(models.Model):
+    nome = models.CharField(max_length=100)
+    email = models.EmailField(unique=True)
+    senha = models.CharField(max_length=100)
 
 
 

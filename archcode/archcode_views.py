@@ -1,14 +1,41 @@
-from django.shortcuts import render
-from .models import Image
-
+from django.shortcuts import render, redirect
+from .models import Image, Usuario
+from .forms import RegistroForm
 
 def index(request):
     images = Image.objects.all() # Busca todas as imagens no banco de dados
+    if request.method == 'POST':
+        form = RegistroForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('archcode/index2.html')
+    else:
+        form = RegistroForm()
     context={
         "page_title":"Portal BSI",
-        "images": images # Passa as imagens para o template
+        "images": images, # Passa as imagens para o template
+        "form": form
     }
     return render(request,'archcode/index.html',context)
+
+""" def index(request):
+    if request.method == 'POST':
+        form = RegistroForm(request.POST)
+        if form.is_valid():
+            form.save()
+            return redirect('archcode/index2.html')  # Altere conforme necessário
+    else:
+        form = RegistroForm()
+
+    images = Image.objects.all()  # Busca todas as imagens no banco de dados
+    context = {
+        "page_title": "Portal BSI",
+        "images": images,  # Passa as imagens para o template
+        "form": form  # Adiciona o formulário ao contexto
+    }
+    return render(request, 'archcode/index.html', context) """
+    
+  
 
 def index_2(request):
     context={
