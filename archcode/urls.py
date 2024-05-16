@@ -11,6 +11,7 @@ urlpatterns = [
     path('index/',archcode_views.index,name="index"),
     path('index-2/',archcode_views.index_2,name="index-2"),
     path('index-3/',archcode_views.index_3,name="index-3"),
+    path('testing/',archcode_views.teste,name="teste"),
 
     path('about-us/',archcode_views.about_us,name="about-us"),
     path('team/',archcode_views.team,name="team"),

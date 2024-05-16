@@ -1,6 +1,8 @@
 from django.shortcuts import render, redirect
 from .models import Image, Usuario
 from .forms import RegistroForm
+from django.template import loader
+from django.http import HttpResponse
 
 def index(request):
     images = Image.objects.all() # Busca todas as imagens no banco de dados
@@ -132,6 +134,17 @@ def error_404(request):
         "page_title":"Error 404"
     }
     return render(request,'404.html',context)
+
+
+def teste(request):
+    meusdados = Usuario.objects.all().order_by('-nome', 'senha').values()
+    template = loader.get_template('archcode/teste.html')
+    context = {
+        "page_title":"Portal BSI",
+        'meususuarios': meusdados,
+        
+    }
+    return HttpResponse(template.render(context, request))
 
 
 
