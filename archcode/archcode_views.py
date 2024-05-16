@@ -138,13 +138,16 @@ def error_404(request):
 
 def teste(request):
     meusdados = Usuario.objects.all().order_by('-nome', 'senha').values()
-    template = loader.get_template('archcode/teste.html')
+    nome = "João"
+    #template = loader.get_template('archcode/teste.html')
     context = {
         "page_title":"Portal BSI",
         'meususuarios': meusdados,
+        'nome': nome,
         
     }
-    return HttpResponse(template.render(context, request))
+    return render(request,'archcode/teste.html',context)
+    #return HttpResponse(template.render(context, request))
 
 
 
